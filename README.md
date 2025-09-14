@@ -78,7 +78,7 @@ I started with the gyroscopic portal (figure 1) using Add Local Rotation and a p
 
 Figure 1: Gyroscopic Portal https://blueprintue.com/blueprint/z6r3w0bn/
 
-I then moved on to the rotating tunnel (figure 2) and used Add Local Rotation On Event Tick with an adjustable rotation speed variable.I added the invisible plane at the end, I was always going do this, in an attempt to disorient the player.
+I then moved on to the rotating tunnel (figure 2) and used Add Local Rotation On Event Tick with an adjustable rotation speed variable. I added the invisible plane at the end, I was always going do this, in an attempt to disorient the player.
 <img width="892" height="1158" alt="RotatingTunnelAndInvisiblePlane" src="https://github.com/user-attachments/assets/587b18ed-fee3-44ce-bb90-c3c9d9833b71" />
 
 Figure 2: Rotating Tunnel (with invisible plane) https://blueprintue.com/blueprint/tkuszww7/
@@ -223,7 +223,7 @@ Matt Aspland, dir. *Unreal Engine 5 Beginner Tutorial - Character Movement And A
 
 RedefineFX, Jesse Pitela, dir. *Niagara Fluids Smoke Portal VFX Tutorial in Unreal Engine 5 | Real-Time Simulation | RedefineFX.* 2024. 12:33. https://www.youtube.com/watch?v=nOirmGz8YG4.
 
-*The Flash: The Complete Series* (2014–2023) [Television programme] Microsoft Films & TV.
+*The Flash: The Complete Series* (2014–2023) Warner Bros. [Television programme] Microsoft Films & TV.
 
 *Titanfall 2* (2016) [PlayStation 4, Xbox One, PC] Los Angeles: Respawn Entertainment. Electronic Arts.
 
