@@ -8,7 +8,7 @@
 
 **Student ID:** 2206046
 
-**Total Word Count:** \[XXXX]
+**Total Word Count:** \[2029]
 
 **Documentation Link:** https://github.com/Ramphoryncus/TechnicalArt_24_25_Copy/blob/GitMain/README.md
 
@@ -185,7 +185,7 @@ Figure 16: Outro widget image
 
 I was constantly testing throughout the process, mostly on character movements/animations, troubleshooting any problems that I came across to proceed to the next task. This was a linear journey, for the most part, except when it came to making the Niagara portal with fluid motion (figure 5). With the full set up that I got from RedefineFX YouTube channel (cited in bibliography) it impacted performance (i.e. frame rate) greatly, even with GPU simulation. It should have been a smoke portal, perhaps if I cut the particle count down dramatically it would have not been so bad on performance but I removed the smoke element entirely and there was no noticeable drop after that. That being said I did not conduct any performance tests on my final build, it runs nicely.
 
-## Critical Reflection *(Approx. 10–15% of word count)*
+## Critical Reflection 
 
 Character movement and animations lived up to my expectations. The increasing sprint speed in parallel with the sprint animation, was the highlight of this project for me. I got most of what I wanted done in this project. I think that the custom gravity was most likely the wrong system to use for wall running as there are a few videos on replicating the Titanfall 2 (Respawn Entertainment, 2016) wall running available and I should have looked those instead. I would have liked to have added projectile lightning but my inexperience with the Niagara system ultimately excluded it from the game. Given more time, I would have liked to have implemented the Apex Destruction system to dice the player into many pieces when they collided with one of the buzzsaws. I would also have liked to have used a static single layer water material on the gyroscopic sphere and lerp it with a panning layer water material. I feel I achieved roughly 75% of what I set out to do.
 
@@ -229,38 +229,40 @@ Unreal University, dir. *How To Make An Options Menu - Unreal Engine 5 Tutorial.
 Unreal University, dir. *Mouse Sensitivity And Invert Settings ( With Save & Load ) - Unreal Engine 5 Tutorial.* 2025. 27:12. https://www.youtube.com/watch?v=q4d_D9HTkyU.
 
 
-Please use [UCA's Harvard Referencing Format](https://mylibrary.uca.ac.uk/referencing) for all citations.
-
-Example:
-
-> Rollings, A. and Adams, E. (2003) *Andrew Rollings and Ernest Adams on Game Design*. New Riders Publishing.
-
 ---
 
 ## Declared Assets
 
-You must declare any content that was **not entirely created by you**, or was **modified with the aid of AI tools**. This includes:
 
-* Third-party 3D models, audio, textures, or code
-* Code snippets from tutorials or forums
-* AI-generated or AI-assisted assets (e.g. ChatGPT, GitHub Copilot, DALL·E)
+List of declared assets
+>  The following assets were created by Matt Aspland YouTube channel
+> * `BP_Charger`
+> * `ABP_Charger`
+> * `ChargerGameModeBlueprint`
+> * `BP_Checkpoint`
 
-List these clearly, with context where needed.
+> The following assets were created by Unreal University YouTube channel
+> * `UI_MainMenu`
+> * `UI_Options`
+> * `UI_Controls`
+> * `UI_PauseInputSettings`
 
-Example:
+>  The following assets were created by CGHOW YouTube channel
+> * `M_Lightning`
 
-> The following assets were created or modified with the use of GPT-4o:
->
-> * `Test.cs` – generated structure with manual revision
-> * `UIAudioManager.cs` – refactored with Copilot suggestions
-> * `DevelopmentJournal.html` – generated layout and headings
+> The following assets were created by RedefineFX YouTube channel
+> * `NS_Portal`
 
----
+> The following assets were created by Ari Arnbjornsson Epic Games Developer
+> * `CustomGravity.cpp`
+> * `CustomGravity.h`
 
-## Tips for Success
+> The following assets were created or modified with the use of ChatGPT 4o
+> * `M_PillarActivated`
+> * `BP_BallLightning`
+> * `BP_SwingingHammer`
+> * `BP_Pillar`
+> * ` BP_Charger`
+> * `ABP_Charger`
+> * `BP_GyroscopicPortal`
 
-* Use plenty of **images, code snippets, drawn diagrams, tables and embedded media** to support your writing.
-* Use **inline citations** for everything that influenced your work, including software and games. Include as many **hyperlinks** as possible for easier navigation to external sources.
-* Reference **documentation, tutorials**, and **games** just like academic sources.
-* Word count is a guideline – ±10% is allowed.
-* You are allowed to use AI tools, but you **must declare** them under *Declared Assets*.
