@@ -189,15 +189,6 @@ I was constantly testing throughout the process, mostly on character movements/a
 
 Character movement and animations lived up to my expectations. The increasing sprint speed in parallel with the sprint animation, was the highlight of this project for me. I got most of what I wanted done in this project. I think that the custom gravity was most likely the wrong system to use for wall running as there are a few videos on replicating the Titanfall 2 (Respawn Entertainment, 2016) wall running available and I should have looked those instead. I would have liked to have added projectile lightning but my inexperience with the Niagara system ultimately excluded it from the game. Given more time, I would have liked to have implemented the Apex Destruction system to dice the player into many pieces when they collided with one of the buzzsaws. I would also have liked to have used a static single layer water material on the gyroscopic sphere and lerp it with a panning layer water material. I feel I achieved roughly 75% of what I set out to do.
 
-### What went well?
-
-* What strengths or successes stood out in the final piece?
-* Did anything exceed expectations?
-
-### What could be improved or done differently next time?
-
-* Were there things that didn’t work? Why?
-* What would you try differently with more time or resources?
 
 ---
 
