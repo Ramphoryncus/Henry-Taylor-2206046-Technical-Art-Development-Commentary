@@ -4,7 +4,7 @@
 
 **Unit Name:** Technical Art 24-25 FGCT5016
 
-**Student Name:** Henry Taylo
+**Student Name:** Henry Taylor
 
 **Student ID:** 2206046
 
@@ -20,13 +20,53 @@
 
 ---
 
-## Abstract *(Approx. 5–10% of word count | 100–300 words)*
+## Abstract
 
-Summarise your task, goals, approach, and final outcome. What was the intent of your work? What is the most important thing to know before reading on?
+
+The task was to create a game and subsequently a final playable build in Unreal Engine 5 based on the theme Alive. We were free to interpret what this might mean to produce a real-time interactive experience. We would have to implement at least two of the following: Procedural Content Generation; Complex Materials and Shaders; Visual Effects (Niagara or Cascade); Performance Optimisation. My goal was to produce a playable level with obstacles and interactive elements and to create a new kind of super anti-hero, based on electricity and speed (running really fast), as the playable character. I approached it in two ways, from a player’s perspective concerning controls, animations and interactive elements, and from an artist’s, making original 3D models with “hand-painted” textures that would populate my three-dimensional environment. The final outcome did not end up having everything that I would like to have included but it is playable and functional. I had intended to use the Niagara system to create lightning bolts and orbs that the character would “throw”, and to implement a custom gravity so the player could run at high speeds on the walls of the final area. I created the lightning orbs using a complex material, the custom gravity was not included in the final build but I did achieve most of what I set out to do.
 
 ---
 
 ## Research *(Approx. 20-30% of word count)*
+
+
+I explored three video games, *Titanfall 2* (Respawn Entertainment, 2016), *DeathSprint 66* (Sumo Digital (Newcastle), 2023), *Tron RUN/r* (Sanzaru Games, 2016), I also considered *The Flash* (Warner Bros. Television, 2014-2023) and *Event Horizon* (Paramount Pictures, 1997).
+
+*Titanfall 2* (Respawn Entertainment, 2016) is widely regarded as one of the finest examples of a single and multiplayer video game experience. Respawn Entertainment crafted something special, lightning in a bottle.
+
+- Wall running mechanic, with believable limitations, some of the best in the business
+- Fluid character movement, also some of the best in the business
+
+I could only hope to achieve something as good as this, not wanting to set my sights too high, this is purely for a reference of what is possible.
+
+*DeathSprint 66*(Sumo Digital (Newcastle), 2023) is a fast-paced PvP racing game in the “runner” genre. The players race around tracks on foot which have difficult reversals and deadly traps littering them. The player gains power ups and can use them to benefit themselves or to attack the other runners depending on the type of power up. This is a slick third person game, vary enjoyable.
+
+- Wall running mechanic which appears to be active until the wall runs out
+- You gain speed the longer you stay out of trouble but there is a limit to the speed
+- Deadly traps
+
+This game comes close to what I had in my mind in terms of movement and wall running. It has nice animations and good controls and a good gameplay loop. This was rattling around in my subconscious, I suspect, when I was constructing my animation blend space.
+
+Tron RUN/r (Sanzaru Games, 2016) is a medium paced “on rails” running game. The player runs at a set speed and they have to run, slide, jump and dodge to the exit. Jumping and gliding over large gaps, dodging obstacles and enemies, or destroy the enemies and obstacles with your disc, collecting “bits” along the way. The controls are not too complicated, but it is not easy.
+
+- Challenging obstacle placement
+- Nice visuals (because it’s Tron if you like that sort of thing)
+
+This was relevant for obstacle placement in my level, not as easy as it may look. It was all a matter of flow, where the platforms and hazards should be placed,  to make the player think rather than just run and jump and slide. From the looks of my character there was definitely some influence from the Tron universe.
+
+*The Flash*(Warner Bros. Television, 2014 to 2023) was the underlying template for my character. He gets his powers after a freak accident. He can run really fast, the friction from his super speeds generates electricity which he can throw like lightning. He also has accelerated healing, he can see the world in super slow motion.
+
+- He runs really fast
+- Can throw lightning
+- Has cool suits
+
+The Flash is totally relevant with the superspeed and lightning throwing. For my character I did not want time to slow down or for there to be accelerated healing, I wanted there to be consequences for irresponsible speeding. My first 3D mesh that I made for charger had lightning bolts on his boots, ears and one on his chest, I was advised against copyright infringement and I like purple more than red, so he got a makeover.
+
+*Event Horizon* (Paramount Pictures, 1997), this is one of the best space horror movies with excellent set design, which is what inspired me create my gyroscopic sphere and the rotating tunnel that looks like an inverted buzzsaw. I watched the Blu-ray extra on set design and construction which helped me fine tune my 3D meshes.
+
+
+
+
 
 ### What sources or references have you identified as relevant to this task?
 
