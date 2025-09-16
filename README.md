@@ -41,7 +41,7 @@ I explored three video games, *Titanfall 2* (Respawn Entertainment, 2016), *Deat
 I could only hope to achieve something as good as this, not wanting to set my sights too high, this is purely for a reference of what is possible.
 
 ---
-*DeathSprint 66*(Sumo Digital (Newcastle), 2023) is a fast-paced PvP racing game in the “runner” genre. The players race around tracks on foot which have difficult reversals and deadly traps littering them. The player gains power ups and can use them to benefit themselves or to attack the other runners depending on the type of power up. This is a slick third person game, vary enjoyable.
+*DeathSprint 66*(Sumo Digital (Newcastle), 2023) is a fast-paced PvP racing game in the “runner” genre. The players race around tracks on foot which have difficult traversals and deadly traps littering them. The player gains power ups and can use them to benefit themselves or to attack the other runners depending on the type of power up. This is a slick third person game, very enjoyable.
 
 - Wall running mechanic which appears to be active until the wall runs out
 - You gain speed the longer you stay out of trouble but there is a limit to the speed
@@ -72,7 +72,7 @@ The Flash is totally relevant with the superspeed and lightning throwing. For my
 ---
 ## Implementation
 
-I started with the gyroscopic portal (figure 1) using Add Local Rotation and a parent-child hierarchy with the base as the parent and the sphere as the final child. I also used individual floats to just each ring’s and sphere’s rotation speed. I came back to this at the end and added a stop rotation and a return to starting rotation when all four pillars are activated with a visibility change to the sphere and spawn a particle portal (figure 5) created in Niagara theanks to RedefineFX YouTube channel.
+I started with the gyroscopic portal (figure 1) using Add Local Rotation and a parent-child hierarchy with the base as the parent and the sphere as the final child. I also used individual floats to adjust each ring’s and the sphere’s rotation speed. I came back to this at the end and added a stop rotation and a return to starting rotation when all four pillars are activated with a visibility change to the sphere and spawn a particle portal (figure 5) created in Niagara thanks to RedefineFX YouTube channel.
 
 <img width="882" height="946" alt="Portal" src="https://github.com/user-attachments/assets/2f6939c7-54c1-49ae-91d7-e26c31286c72" />
 
@@ -84,7 +84,7 @@ I then moved on to the rotating tunnel (figure 2) and used Add Local Rotation On
 Figure 2: Rotating Tunnel (with invisible plane) https://blueprintue.com/blueprint/tkuszww7/
 
 
-For the Buzz stack (figure 3), single buzzsaw and tenderiser (figure 4)  Add Local Rotation on Event Tick but I added an On Component Hit > Cast To Character> Destroy Actor. For the swinging hammers (figure 4) I initially used a Timeline to swing the hammers back and forth but when it came to adding force with Launch Character the player would shoot off in the unexpected directions no matter which side of the hammer they got hit by, so I went back to the trusted Add Local Rotation so they would do 360° of rotation and every other hammer I rotated 180° so the player can only get hit in one direction by a specific hammer.
+For the Buzz stack (figure 3), single buzzsaw and tenderiser (figure 4)  Add Local Rotation on Event Tick but I added an On Component Hit > Cast To Character> Destroy Actor. For the swinging hammers (figure 4) I initially used a Timeline to swing the hammers back and forth but when it came to adding force with Launch Character the player would shoot off in unexpected directions no matter which side of the hammer they got hit by, so I went back to the trusted Add Local Rotation so they would do 360° of rotation and every other hammer I rotated 180° so the player can only get hit in one direction by a specific hammer.
 
 <img width="852" height="612" alt="BuzzsawStack" src="https://github.com/user-attachments/assets/73774fe1-8dc1-4078-a5c4-d58022d6d49e" />
 
@@ -102,7 +102,7 @@ Tenderizer https://blueprintue.com/blueprint/wfunnnc1/
 
 Then I got to blueprinting the character movement and constructing the animation blueprint (figure 6). At first every time I jumped with no animation present the character would fall flat on his face, this was because I had imported the mesh without a skeleton which did exist because I put it there in Mixamo. I then had to refresh my memory on movement input, camera control and animation blueprints by re-watching some YouTube tutorials from the creator Matt Aspland (cited in the bibliography).
 
-I put a lot of time into these blueprints making adjustments, constantly testing, making sure that everything worked as I wanted it to. I did have a few issues with passing variables between the character blueprint at the animation blueprint but they all got ironed out in the end. I did attempt to use animation notify states to control the spawn and throw lightning ball, but ended up using custom events to control the spawning and launching. Animation notify states worked with the throw animation using enable and disable input notifiers so that the player wouldn’t be skating around whilst they’re going through throw animation. When it came to sliding, I had to add an UnCrouch node and then adjust the collision capsule half height and also the location of the character mesh big cars if I used a crouch node it would drop the player speed and they wouldn’t slide on their back for as long as they wanted. I could probably have used a set player speed as well but I felt this was the most robust solution.
+I put a lot of time into these blueprints making adjustments, constantly testing, making sure that everything worked as I wanted it to. I did have a few issues with passing variables between the character blueprint at the animation blueprint but they all got ironed out in the end. I did attempt to use animation notify states to control the spawn and throw lightning ball, but ended up using custom events to control the spawning and launching. Animation notify states worked with the throw animation using enable and disable input notifiers so that the player wouldn’t be skating around whilst they’re going through throw animation. When it came to sliding, I had to add an UnCrouch node and then adjust the collision capsule half height and also the location of the character mesh, because if I used a crouch node it would drop the player speed and they wouldn’t slide on their back for as long as I wanted. I could probably have used a set player speed as well but I felt this was the most robust solution.
 
 <img width="2055" height="1219" alt="ChargerScreenShot" src="https://github.com/user-attachments/assets/c80a9c95-3314-4b38-b2fb-6a22797f7f7b" />
 
@@ -119,7 +119,7 @@ Figure 6: Animation Blueprint (blueprintUE does not parse these)
 
 Animation Blueprint Event Graph https://blueprintue.com/blueprint/15wpgxa2/
 
-For the ball lightning projectile (figure 7) I had to use an Actor Has Tag node which was assigned to the pillars and then a cast BP_Pillar with an event dispatcher for Activate Pillars which was then also passed to the gyroscopic portal, so when all of the pillars are activated, the portal stops rotating the centre sphere disappears and in Niagara portal appears. I also got quite an impressive complex material from the CGHOW YouTube channel (cited in the bibliography) using a noise map twice layering one on top of the other moving it with an absolute world location multiplied by time plus many other add-in supply nodes with a Fresnel fade for the glowing effect, all very nice.
+For the ball lightning projectile (figure 7) I had to use an Actor Has Tag node which was assigned to the pillars and then a Cast To BP_Pillar with an event dispatcher for Activate Pillars which was then also passed to the gyroscopic portal, so when all of the pillars are activated, the portal stops rotating the centre sphere disappears and a Niagara portal appears. I also got quite an impressive complex material from the CGHOW YouTube channel (cited in the bibliography) using a noise map twice layering one on top of the other moving it with an absolute world location multiplied by time plus many other add and multiply nodes with a Fresnel fade for the glowing effect, all very nice.
 
 <img width="427" height="424" alt="BallLightning" src="https://github.com/user-attachments/assets/f955d9ad-b7db-456a-bfa8-ac23aa1ee071" />
 
@@ -137,7 +137,7 @@ Figure 8: Activatible Pillars https://blueprintue.com/blueprint/_rz1y35g/
 
 Pillar material https://blueprintue.com/blueprint/q_o33nff/
 
-I already had my kill boxes set up around the level to ensure no infinite falls to not dying that I had to have a checkpoint system, thanks again to Matt Aspland’s YouTube channel.
+I already had my kill boxes set up around the level to ensure no infinite falls to not dying, so I had to have a checkpoint system, thanks again to Matt Aspland’s YouTube channel.
 
 <img width="1038" height="1015" alt="KillBox" src="https://github.com/user-attachments/assets/7dc5bdf3-61e4-461e-bd4c-d6e98d62f64e" />
 
