@@ -72,7 +72,7 @@ The Flash is totally relevant with the superspeed and lightning throwing. For my
 ---
 ## Implementation
 
-I started with the gyroscopic portal (figure 1) using Add Local Rotation and a parent-child hierarchy with the base as the parent and the sphere as the final child. I also used individual floats to adjust each ring’s and the sphere’s rotation speed. I came back to this at the end and added a stop rotation and a return to starting rotation when all four pillars are activated with a visibility change to the sphere and spawn a particle portal (figure 5) created in Niagara thanks to RedefineFX YouTube channel.
+I started with the gyroscopic portal (figure 1) using Add Local Rotation and a parent-child hierarchy with the base as the parent and the sphere as the final child. I also used individual floats to adjust each ring’s and the sphere’s rotation speed. I came back to this at the end and added a stop rotation and a return to starting rotation when all four pillars are activated with a visibility change to the sphere and spawn a particle portal (figure 5) created in Niagara thanks to RedefineFX YouTube channel (figure 5.1).
 
 <img width="882" height="946" alt="Portal" src="https://github.com/user-attachments/assets/2f6939c7-54c1-49ae-91d7-e26c31286c72" />
 
@@ -110,7 +110,14 @@ Figure 5: The Indigo Charger, Niagara Portal and Activated Pillars
 
 BP_Charger complete character Blueprint https://blueprintue.com/blueprint/6idxw_ek/
 
-Niagara portal https://blueprintue.com/blueprint/0bdc1b48/
+Niagara portal https://blueprintue.com/blueprint/0bdc1b48/  (blueprintUE does not parse these properly)
+
+
+<img width="1209" height="790" alt="NiagaraPortalNodes" src="https://github.com/user-attachments/assets/8a5212c5-de08-465d-8592-ed01ecf6f32e" />
+
+Figure 5.1 Niagara Portal nodes 
+
+
 
 
 <img width="1075" height="667" alt="ABP_Charger" src="https://github.com/user-attachments/assets/101cf649-912e-4f8e-baf0-7d88dbbd3ef0" />
