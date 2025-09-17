@@ -33,6 +33,11 @@ The task was to create a game and subsequently a final playable build in Unreal 
 I explored three video games, *Titanfall 2* (Respawn Entertainment, 2016), *DeathSprint 66* (Sumo Digital (Newcastle), 2023), *Tron RUN/r* (Sanzaru Games, 2016), I also considered *The Flash* (Warner Bros. Television, 2014-2023) and *Event Horizon* (Paramount Pictures, 1997).
 
 ---
+
+<img width="1594" height="317" alt="Titanfall 2" src="https://github.com/user-attachments/assets/51209701-8c5a-4df9-b362-7978f19b5b0a" />
+
+
+
 *Titanfall 2* (Respawn Entertainment, 2016) is widely regarded as one of the finest examples of a single and multiplayer video game experience. Respawn Entertainment crafted something special, lightning in a bottle.
 
 - Wall running mechanic, with believable limitations, some of the best in the business
@@ -41,6 +46,11 @@ I explored three video games, *Titanfall 2* (Respawn Entertainment, 2016), *Deat
 I could only hope to achieve something as good as this, not wanting to set my sights too high, this is purely for a reference of what is possible.
 
 ---
+
+<img width="1191" height="296" alt="DeathSprint66" src="https://github.com/user-attachments/assets/a1e6ad8f-10ea-4c33-bc40-2eab03422d68" />
+
+
+
 *DeathSprint 66*(Sumo Digital (Newcastle), 2023) is a fast-paced PvP racing game in the “runner” genre. The players race around tracks on foot which have difficult traversals and deadly traps littering them. The player gains power ups and can use them to benefit themselves or to attack the other runners depending on the type of power up. This is a slick third person game, very enjoyable.
 
 - Wall running mechanic which appears to be active until the wall runs out
@@ -50,6 +60,11 @@ I could only hope to achieve something as good as this, not wanting to set my si
 This game comes close to what I had in my mind in terms of movement and wall running. It has nice animations and good controls and a good gameplay loop. This was rattling around in my subconscious, I suspect, when I was constructing my animation blend space.
 
 ---
+
+<img width="1723" height="492" alt="TronRUNr" src="https://github.com/user-attachments/assets/c6b06b14-dcf3-4f43-8fb2-2b7d15469399" />
+
+
+
 Tron RUN/r (Sanzaru Games, 2016) is a medium paced “on rails” running game. The player runs at a set speed and they have to run, slide, jump and dodge to the exit. Jumping and gliding over large gaps, dodging obstacles and enemies, or destroy the enemies and obstacles with your disc, collecting “bits” along the way. The controls are not too complicated, but it is not easy.
 
 - Challenging obstacle placement
@@ -58,6 +73,12 @@ Tron RUN/r (Sanzaru Games, 2016) is a medium paced “on rails” running game. 
 This was relevant for obstacle placement in my level, not as easy as it may look. It was all a matter of flow, where the platforms and hazards should be placed,  to make the player think rather than just run and jump and slide. From the looks of my character there was definitely some influence from the Tron universe.
 
 ---
+
+
+<img width="960" height="1200" alt="TheFlashTV" src="https://github.com/user-attachments/assets/29e39226-0eb2-42b6-b526-29cfee4c219a" />
+
+
+
 *The Flash*(Warner Bros. Television, 2014 to 2023) was the underlying template for my character. He gets his powers after a freak accident. He can run really fast, the friction from his super speeds generates electricity which he can throw like lightning. He also has accelerated healing, he can see the world in super slow motion.
 
 - He runs really fast
@@ -67,9 +88,16 @@ This was relevant for obstacle placement in my level, not as easy as it may look
 The Flash is totally relevant with the superspeed and lightning throwing. For my character I did not want time to slow down or for there to be accelerated healing, I wanted there to be consequences for irresponsible speeding. My first 3D mesh that I made for charger had lightning bolts on his boots, ears and one on his chest, I was advised against copyright infringement and I like purple more than red, so he got a makeover.
 
 ---
+
+
+<img width="2000" height="1055" alt="EventHorizon" src="https://github.com/user-attachments/assets/3a20d4ab-8e92-4907-8570-67dec5c1767a" />
+
+
+
 *Event Horizon* (Paramount Pictures, 1997), this is one of the best space horror movies with excellent set design, which is what inspired me create my gyroscopic sphere and the rotating tunnel that looks like an inverted buzzsaw. I watched the Blu-ray extra on set design and construction which helped me fine tune my 3D meshes. I replicated their visual appearance and motion too.
 
 ---
+
 ## Implementation
 
 I started with the gyroscopic portal (figure 1) using Add Local Rotation and a parent-child hierarchy with the base as the parent and the sphere as the final child. I also used individual floats to adjust each ring’s and the sphere’s rotation speed. I came back to this at the end and added a stop rotation and a return to starting rotation when all four pillars are activated with a visibility change to the sphere and spawn a particle portal (figure 5) created in Niagara thanks to RedefineFX YouTube channel (figure 5.1).
