@@ -233,6 +233,7 @@ Character movement and animations lived up to my expectations. The increasing sp
 Arnbjornsson, Ari. ‘Custom Gravity in UE 5.4 | Tutorial’. Epic Games Developer, 21 March 2024. https://dev.epicgames.com/community/learning/tutorials/w6l7/unreal-engine-custom-gravity-in-ue-5-4.
 
 CGHOW, Ashif Ali, dir. *Create Stunning Lightning Orbs in Unreal Engine Niagara: Step-by-Step Tutorial.* 2025. 15:19. https://www.youtube.com/watch?v=bYG6qWZfCsg.
+
 ChatGPT. ‘ChatGPT’. Accessed 14 September 2025. https://chatgpt.com/?locale=en-US.
 
 *DeathSprint 66* (2023) [PC] Newcastle: Sumo Digital (Newcastle). Secret Mode.
